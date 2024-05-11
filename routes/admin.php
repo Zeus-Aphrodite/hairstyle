@@ -14,7 +14,7 @@ Route::get('/', 'DashboardController@index')->name('admin.homepage');
 Route::get('selections', 'DashboardController@selections')->name('admin.selections');
 Route::group(['prefix' => 'haircuts'], getHaircutRoutes('haircuts'));
 Route::group(['prefix' => 'packed-haircuts'], getHaircutRoutes('packed-haircuts'));
-
+      
 Route::get('logout', 'Auth\AuthController@logout')->name('admin.logout');
 Route::get('profile/edit', 'ProfileController@edit')->name('admin.profile.edit');
 Route::post('profile/edit', 'ProfileController@update')->name('admin.profile.update');

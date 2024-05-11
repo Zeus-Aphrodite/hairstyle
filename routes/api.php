@@ -14,6 +14,6 @@
 Route::get('haircuts', 'ApiController@haircuts');
 Route::get('quizzes', 'ApiController@quizzes');
 Route::post('quizzes/{quiz}/answers', 'ApiController@storeAnswers');
-
+   
 Route::get('packed-haircuts', 'ApiController@packedHaircuts');
 Route::post('packed-haircuts/{haircut}', 'ApiController@submitPackedSelection');
